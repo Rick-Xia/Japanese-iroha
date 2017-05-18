@@ -1,2 +1,2 @@
 # Japanese-iroha
-An ABC introduction to Japanese
+An ABC introduction to Basic Japanese
