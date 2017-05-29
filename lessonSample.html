@@ -71,6 +71,10 @@
                 padding: 15px;
             }
 
+            p {
+                font-size: 14px;
+            }
+
             .margin {
                 margin-bottom: 45px;
             }
@@ -148,18 +152,38 @@
         </div>
         <div class="container-fluid bg-3 text-center">
             <h3 class="margin"> Exercise! </h3>
-            <div class="row">
-                <div class="col-xs-2" display="none"></div>
-                <div class="col-xs-8 bg-4 text-center">
+            <div id="exerciseCarousel" class="carousel slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#exerciseCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#exerciseCarousel" data-slide-to="1"></li>
+                    <li data-target="#exerciseCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>alot of asdjkasljdklasjdlksajdlk</h4>
+                    </div>
+                    <div class="item">
+                        <h4>alot of asdjkasljdklasjdlksajdlkquiz2</h4>
+                    </div>
+                    <div class="item">
+                        <h4>alot of asdjkasljdklasjdlksajdlkquiz3</h4>
+                    </div>
                 </div>
-                <div class="col-xs-2" display="none"></div>
+                <a class="left carousel-control" href="#exerciseCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#exerciseCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
         <footer class="container-fluid bg-4 text-center">
             <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
                 <span class="glyphicon glyphicon-chevron-up"></span>
             </a>
-            <p class="margin-top">A Sample Website for Personal Exercise. Commercial intention is not planned.</p>
+            <p>A Sample Website for Personal Exercise. Commercial intention is not planned.</p>
         </footer>
     </body>
 
