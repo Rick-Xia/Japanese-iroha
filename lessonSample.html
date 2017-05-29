@@ -10,13 +10,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             /* Set black background color, white text and some padding */
-            /*
-            footer {
-                background-color: #555;
-                color: white;
-                padding: 15px;
-            }
-            */
 
             .bg-1 {
                 background-color: #1abc9c;
@@ -65,10 +58,31 @@
                 color: #1abc9c !important;
             }
 
+            footer {
+                background-color: #555;
+                color: white;
+                padding: 15px;
+            }
+
+            .margin {
+                margin-bottom: 45px;
+            }
+
+            .margin-top {
+                margin-top: 45px;
+            }
+
         </style>
+        <script>
+            $(document).ready(function() {
+                // Initialize Tooltip
+                $('[data-toggle="tooltip"]').tooltip();
+            })
+
+        </script>
     </head>
 
-    <body>
+    <body id="myPage">
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
@@ -88,8 +102,8 @@
             </div>
         </nav>
         <div class="container-fluid bg-1 text-center">
-            <img src="./img/japan_header.jpg" alt="Header">
-            <h2>LESSON 1 | 第 一 課</h2>
+            <h1 class="margin">LESSON 1   第 一 課</h1>
+            <img class="margin" src="./img/japan_header.jpg" alt="Header" style="opacity: 0.7">
         </div>
         <div class="container-fluid bg-2 text-center">
             <h3>Ready For Today's Study? </h3>
@@ -97,30 +111,38 @@
             <div class="row">
                 <div class="col-xs-4">
                     <p>GRAMMAR | 文法</p>
+                    <a href="#" class="btn btn-default btn-lg"> GO! </a>
                 </div>
                 <div class="col-xs-4">
                     <p>VOCAB | 単語</p>
+                    <a href="#" class="btn btn-default btn-lg"> GO! </a>
                 </div>
                 <div class="col-xs-4">
                     <p>EXPRESSION | 表現</p>
+                    <a href="#" class="btn btn-default btn-lg"> GO! </a>
                 </div>
             </div>
-            <br />
-            <h3> Need to look up learnt grammar? </h3>
+        </div>
+        <div class="container-fluid bg-2 text-center">
+            <h3> Need to Review for learnt grammar? </h3>
+            <br>
             <a href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Search</a>
-            <!--div class="row">
-                <div class="col-sm-12 well"> </div>
-            </div-->
         </div>
         <div class="container-fluid bg-3 text-center">
-            <h3> Exercise! </h3>
+            <h3 class="margin"> Exercise! </h3>
             <div class="row">
+                <div class="col-xs-2" display="none"></div>
+                <div class="col-xs-8 bg-4 text-center">
+                </div>
+                <div class="col-xs-2" display="none"></div>
             </div>
         </div>
         <footer class="container-fluid bg-4 text-center">
-            <p>A Sample Website for Personal Exercise. Commercial intention is not planned.</p>
+            <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p class="margin-top">A Sample Website for Personal Exercise. Commercial intention is not planned.</p>
         </footer>
     </body>
 
 </html>
-
