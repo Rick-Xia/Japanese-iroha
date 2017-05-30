@@ -83,6 +83,14 @@
                 margin-top: 45px;
             }
 
+            .margin-left {
+                margin-left: 45px;
+            }
+
+            .margin-small {
+                margin-top: 10px;
+            }
+
         </style>
         <script>
             $(document).ready(function() {
@@ -150,29 +158,73 @@
             </div>
         </div>
         <div class="container-fluid bg-3 text-center">
-            <h3 class="margin"> Exercise! </h3>
-            <div id="exerciseCarousel" class="carousel slide text-center" data-ride="carousel">
+            <h3 class="margin text-center"> Exercise! </h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#quiz1">Quiz 1</a></li>
+                <li><a data-toggle="tab" href="#quiz2">Quiz 2</a></li>
+                <li><a data-toggle="tab" href="#quiz3">Quiz 3</a></li>
+                <li><a data-toggle="tab" href="#quiz4">Quiz 4</a></li>
+                <li><a data-toggle="tab" href="#quiz5">Quiz 5</a></li>
+            </ul>
+            <div class="tab-content text-left margin-left margin-top">
+                <div id="quiz1" class="tab-pane fade in active">
+                    <h3>What the meaning of <span id="quizBtn1" class="btn btn-info btn-lg disabled">学校</span> ?</h3>
+                    <div class="row">
+                        <div class="col-sm-7 margin-small">
+                            <button class="btn btn-primary btn-block" type="button">1. School</button>
+                        </div>
+                        <div class="col-sm-7 margin-small">
+                            <button class="btn btn-primary btn-block" type="button">2. Student</button>
+                        </div>
+                        <div class="col-sm-7 margin-small">
+                            <button class="btn btn-primary btn-block" type="button">3. Teacher</button>
+                        </div>
+                        <div class="col-sm-7 margin-small">
+                            <button class="btn btn-primary btn-block" type="button">4. Bank</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="quiz2" class="tab-pane fade">
+                    <h3>QUIZ 2</h3>
+                    <p></p>
+                </div>
+                <div id="quiz3" class="tab-pane fade">
+                    <h3>QUIZ 3</h3>
+                    <p></p>
+                </div>
+                <div id="quiz4" class="tab-pane fade">
+                    <h3>QUIZ 4</h3>
+                    <p></p>
+                </div>
+                <div id="quiz5" class="tab-pane fade">
+                    <h3>QUIZ 5</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-1 text-center">
+            <div id="interestCarousel" class="carousel slide text-center" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#exerciseCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#exerciseCarousel" data-slide-to="1"></li>
-                    <li data-target="#exerciseCarousel" data-slide-to="2"></li>
+                    <li data-target="#interestCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#interestCarousel" data-slide-to="1"></li>
+                    <li data-target="#interestCarousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <h4>PLACEHOLDER FOR QUIZ 1</h4>
+                        <h4>PLACEHOLDER FOR CULTURAL TIPS 1</h4>
                     </div>
                     <div class="item">
-                        <h4>PLACEHOLDER FOR QUIZ 2</h4>
+                        <h4>PLACEHOLDER FOR CULTURAL TIPS 2</h4>
                     </div>
                     <div class="item">
-                        <h4>PLACEHOLDER FOR QUIZ 3</h4>
+                        <h4>PLACEHOLDER FOR CULTURAL TIPS 3</h4>
                     </div>
                 </div>
-                <a class="left carousel-control" href="#exerciseCarousel" role="button" data-slide="prev">
+                <a class="left carousel-control" href="#interestCarousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#exerciseCarousel" role="button" data-slide="next">
+                <a class="right carousel-control" href="#interestCarousel" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
